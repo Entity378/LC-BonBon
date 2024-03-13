@@ -96,7 +96,7 @@ namespace BonBon.Config
             }
             catch (Exception e)
             {
-                Debug.LogError("BonBonLog: Failed to send config: " + e);
+                Debug.LogError("BonBonLog: Failed to send config - " + e);
             }
             finally
             {
@@ -115,7 +115,7 @@ namespace BonBon.Config
             }
             catch (Exception e)
             {
-                Debug.LogError("BonBonLog: Failed to receive config: " + e);
+                Debug.LogError("BonBonLog: Failed to receive config - " + e);
                 SetToLocalValues();
             }
         }
